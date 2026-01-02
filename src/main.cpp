@@ -206,7 +206,7 @@ int main()
     console_set_debug(1);
 
     joypad_init();
-
+    display_close();
     // Setting up the display and GL
     display_init(RESOLUTION_320x240, DEPTH_16_BPP, 3, GAMMA_NONE, FILTERS_RESAMPLE_ANTIALIAS_DEDITHER);
     rdpq_init();
